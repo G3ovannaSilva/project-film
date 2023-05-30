@@ -1,0 +1,192 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    /* shorthand */
+    background: black url('../imgs/fundo.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 0px 30px 150px   30px ;
+}
+
+header > nav{
+    background-color: rgba(128, 128, 128, 0);
+    padding: 15px 15px 50px 10px;
+}
+
+header > nav > div > ul{
+    display: flex;
+}
+
+header > nav > ul > div{
+    display: table;
+}
+
+header > nav > div > ul > li{
+    list-style:none;
+}
+
+header > nav > div > ul > li > a{
+    font: normal bold 20px 'verdana';
+    margin: 35px;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+header > nav > div > ul > li > a:hover{
+    color:rgb(147, 181, 245) ;
+    font: normal bold 25px 'verdana';
+    text-decoration: none;
+}
+
+article > h1{
+    font: normal bold 40px 'verdana';
+    color: white;
+}
+
+article > p{
+    font: normal normal 15px 'verdana';
+    color: white;
+    text-align: left;
+}
+header > div{
+    margin: 50px 20px;
+}
+
+header > div > a:hover{
+    background-color: rgb(6, 45, 104) ;
+    color: white;
+}
+
+header > div > a{
+    font: normal bold 20px 'verdana';
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(147, 181, 245);
+    text-shadow: 3px 3px 15px black;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+main{
+    padding: 0px;
+    margin: 0px;
+}
+
+main > section {
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+main > section > div > h1{
+    font: normal bold 20px 'verdana';
+    padding: 20px ;
+    color: white;
+    text-align: center;
+}   
+
+main > #section_box{
+    display: flex;
+    padding: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+
+.filmesPrincipais{
+    background: black;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b03af1",endColorstr="#6016a7",GradientType=1);
+    display: grid;
+    grid-template-rows: auto auto auto auto 1fr;
+    grid-template-columns: repeat(12 1fr);
+    height: 100%;
+    width: 100%;
+    gap: 48px;
+    color: white;
+}
+img, .atropos{
+    width: 400px;
+    height: auto;
+    border-radius: 16px;
+}
+.filmesPrincipais_title{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    padding-top: 40px;
+    grid-row-start: 1;
+    grid-column: 1/12;
+}
+.my-atropos{
+    grid-row: 3;
+    grid-column: 2/5;
+}
+.my-atropos_2{
+    grid-row: 3;
+    grid-column: 5/8;
+}
+.my-atropos_3{
+    grid-row: 3;
+    grid-column: 8/11;
+}
+.my-atropos_4{
+    grid-row: 4;
+    grid-column: 2/5;
+}
+.my-atropos_5{
+    grid-row: 4;
+    grid-column: 5/8;
+}
+.my-atropos_6{
+    grid-row: 4;
+    grid-column: 8/11;
+}
+
+@media only screen and (max-width: 800px){
+    .filmesPrincipais{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (min-width:800px ) and (max-width: 1366px){
+    .filmesPrincipais{
+        display: grid;
+        grid-template-columns: repeat(6 1fr);
+        grid-template-rows: auto auto auto 1fr;
+    }
+    .filmesPrincipais_title{
+        grid-column: 1/8;
+        grid-row: 1;
+        text-align: center;
+    }
+    .my-atropos{
+        grid-row: 2;
+        grid-column: 2/5;
+    }
+    .my-atropos_2{
+        grid-row: 4;
+        grid-column: 2/5;
+    }
+    .my-atropos_3{
+        grid-row: 2;
+        grid-column: 5/8;
+    }
+    .my-atropos_4{
+        grid-row: 3;
+        grid-column: 2/5;
+    }
+    .my-atropos_5{
+        grid-row: 4;
+        grid-column: 5/8;
+    }
+    .my-atropos_6{
+        grid-row: 3;
+        grid-column: 5/8;
+    }
